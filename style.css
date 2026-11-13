@@ -50,3 +50,49 @@ body{
     width: 50px;
     height: 50px;
 }
+
+.weather-icon{
+    max-width: 250px;
+    margin-right: 15px;
+}
+
+.wind-speed{
+    max-width: 125px;
+}
+
+.humidity-img{
+    max-width: 125px;
+    margin-left: 15px;
+}
+.Weather h1{
+    font-size: 30px;
+}
+
+.Weather h2{
+    font-size: 25px;
+    margin-top: -5px;
+}
+
+p{
+    font-size: 18px;
+    font-weight:bolder;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    margin-top: 30px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 120px;
+    
+}
