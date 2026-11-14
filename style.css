@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: aquamarine;
+    background-color: rgb(196, 246, 229);
 }
 .search button img{
     width: 16px;
@@ -16,7 +16,7 @@ body{
     padding: 40px 40px;
     margin: 5% auto;
     max-width: 512px;
-    background: linear-gradient(to right,blue,white,purple);
+    background: linear-gradient(to right,rgb(60, 60, 255),rgb(249, 183, 183),rgb(175, 101, 175));
     text-align: center;
     border-radius: 20px;
 }
