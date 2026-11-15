@@ -29,23 +29,30 @@ let checkWeather = async (cityName) => {
         
         return displayData
         
-        
     } catch (error) {
         
         console.error("City name could not be fetched, try again", error.message);
+        return null
     }
 }
 
 searchBtn.addEventListener("click", async () => {
-    
-    document.querySelector(".Weather").style.display = "block"
-    
-    cityNameData.innerHTML = inputText.value
+
+    document.querySelector(".error").style.display = "none"
+    document.querySelector(".Weather").style.display = "none"
     
     let displayData = await checkWeather(inputText.value)
-    TemperatureData.innerHTML = displayData.Temperature
-    windspeedData.innerHTML = displayData.Windspeed
-    humidityData.innerHTML = displayData.Humidity
+
+    if (!displayData) {
+        document.querySelector(".error").style.display = "block"
+    }
+    
+    cityNameData.innerHTML = inputText.value
+    TemperatureData.innerHTML = displayData.Temperature + "°C" 
+    windspeedData.innerHTML = displayData.Windspeed + " km/hr"
+    humidityData.innerHTML = displayData.Humidity + "%" 
+
+    document.querySelector(".Weather").style.display = "block"
 
 })
 
