@@ -96,3 +96,7 @@ p{
     width: 120px;
     
 }
+
+.Weather{
+    display: none;
+}
